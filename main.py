@@ -50,11 +50,11 @@ async def contact(request: Request):
     context = {"request": request, "image_url": ""}
     return templates.TemplateResponse("contact.html", context)
 
-@app.get("/morgage", response_class=HTMLResponse)
-async def mortgage_calculator(request: Request):
-    # Render the home.html template with the request and image_url variables
-    context = {"request": request, "image_url": ""}
-    return templates.TemplateResponse("morgage.html", context)
+# @app.get("/morgage", response_class=HTMLResponse)
+# async def mortgage_calculator(request: Request):
+#     # Render the home.html template with the request and image_url variables
+#     context = {"request": request, "image_url": ""}
+#     return templates.TemplateResponse("morgage.html", context)
 
 
 @app.get("/robots.txt")
@@ -72,7 +72,7 @@ def create_image(request: ImageRequest):
         prompt=request.prompt,
         n=1,
         size=request.size,
-        model="image-alpha-001"
+        
     )
     # Return the image URL
     if "created" in response:

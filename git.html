@@ -1,0 +1,153 @@
+<html>
+<head>
+	<title>Samson Idoko - Git Presentation</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-sUdIWe+Mn9KZrqx30Fr8WJYwKdfI4+4T4JvHnWwcULnTILF+T9ieJq3G2WNYNwElbomOwwtKjy3+QGtOKZZ0Jg==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+	<style>
+		body {
+			font-family: "Segoe UI", sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			background-color: #f7fafc;
+			color: #1a202c;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family: "Segoe UI", sans-serif;
+			font-weight: 600;
+			color: #4a5568;
+		}
+		a {
+			color: #4c51bf;
+			text-decoration: none;
+			border-bottom: 1px solid #e2e8f0;
+		}
+		a:hover {
+			color: #2d3748;
+			border-bottom-color: #4c51bf;
+		}
+		pre {
+			background-color: #edf2f7;
+			color: #1a202c;
+			padding: 1em;
+			overflow-x: auto;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		code {
+			background-color: #e2e8f0;
+			color: #1a202c;
+			padding: 0.25em 0.5em;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		.container {
+			max-width: 1024px;
+			margin: 0 auto;
+			padding: 1em;
+		}
+		.bg-primary {
+			background-color: #4c51bf;
+		}
+		.text-primary {
+			color: #4c51bf;
+		}
+		.shadow {
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		.hover-bg-gray-200:hover {
+			background-color: #edf2f7;
+		}
+		.social-icon {
+			margin-right: 1em;
+		}
+		.social-icon a {
+			color: #4c51bf;
+			text-decoration: none;
+		}
+		.social-icon a:hover {
+			color: #2d3748;
+		}
+	</style>
+</head>
+<body>
+	<header class="bg-white shadow">
+		<div class="container mx-auto py-4 px-6">
+			<div class="flex justify-between items-center">
+				<h1 class="text-2xl text-gray-800">Samson Idoko</h1>
+				<nav>
+					<ul class="flex">
+						<li class="mr-6"><a class="hover:text-primary" href="#git">Git</a></li>
+						<li class="mr-6"><a class="hover:text-primary" href="#add">Add</a></li>
+						<li class="mr-6"><a class="hover:text-primary" href="#clone">Clone</a></li>
+                        <li class="mr-6"><a class="hover:text-primary" href="#pull">Pull</a></li>
+                        <li class="mr-6"><a class="hover:text-primary" href="#push">Push</a></li>
+                        <li><a class="hover:text-primary" href="#commit">Commit</a></li>
+                        </ul>
+                        </nav>
+                        </div>
+                        </div>
+                        </header>
+                        <main class="container mx-auto py-8 px-6">
+                            <section id="git" class="pb-8">
+                                <h2 class="text-3xl text-gray-800 font-bold mb-4">Git</h2>
+                                <p class="text-xl text-gray-700 leading-relaxed">Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+                                <p class="text-xl text-gray-700 leading-relaxed">Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.</p>
+                            </section>
+                        
+                            <section id="add" class="pb-8">
+                                <h2 class="text-3xl text-gray-800 font-bold mb-4">Add</h2>
+                                <p class="text-xl text-gray-700 leading-relaxed">The "git add" command adds changes to the working directory to the staging area. This allows you to selectively stage files and changes for a commit.</p>
+                                <p class="text-xl text-gray-700 leading-relaxed">For example, to stage all changes in the current directory, you can use the command:</p>
+                                <pre class="bg-gray-200 rounded-lg p-2 mt-4 block"><code>git add .</code></pre>
+                            </section>
+                        
+                            <section id="clone" class="pb-8">
+                                <h2 class="text-3xl text-gray-800 font-bold mb-4">Clone</h2>
+                                <p class="text-xl text-gray-700 leading-relaxed">The "git clone" command creates a copy of an existing repository. This allows you to work on a project locally and contribute changes back to the remote repository.</p>
+                                <p class="text-xl text-gray-700 leading-relaxed">For example, to clone a repository from GitHub, you can use the command:</p>
+                                <pre class="bg-gray-200 rounded-lg p-2 mt-4 block"><code>git clone https://github.com/username/repository.git</code></pre>
+                            </section>
+                        
+                            <section id="pull" class="pb-8">
+                                <h2 class="text-3xl text-gray-800 font-bold mb-4">Pull</h2>
+                                <p class="text-xl text-gray-700 leading-relaxed">The "git pull" command fetches changes from a remote repository and merges them into the local branch. This allows you to keep your local repository up-to-date with the latest changes from the remote repository.</p>
+                                <p class="text-xl text-gray-700 leading-relaxed">For example, to pull changes from the "master" branch of a remote repository, you can use the command:</p>
+                                <pre class="bg-gray-200 rounded-lg p-2 mt-4 block"><code>git pull origin master</code></pre>
+                            </section>
+                        
+                            <section id="push" class="pb-8">
+                                <h2 class="text-3xl text-gray-800 font-bold mb-4">Push</h2>
+                                <p class="text-xl text-gray-700 leading-relaxed">The "git push" command uploads local repository content to a remote repository. This allows you to share changes with others and collaborate on a project.</p>
+                                <p class="text-xl text-gray-700 leading-relaxed">For example, to push changes from the "master" branch of your local repository to the remote repository, you can use the command:</p>
+                                <pre class="bg-gray-200 rounded-lg p-2 mt-4 block"><code>git push origin master</code></pre>
+                            </section>
+                            <section id="commit" class="pb-8">
+                                <h2 class="text-3xl text-gray-800 font-bold mb-4">Commit</h2>
+                                <p class="text-xl text-gray-700 leading-relaxed">The "git commit" command saves changes to the local repository. This allows you to create a snapshot of the changes and record a message describing the changes.</p>
+                                <p class="text-xl text-gray-700 leading-relaxed">For example, to commit all staged changes with a message, you can use the command:</p>
+                                <pre class="bg-gray-200 rounded-lg p-2 mt-4 block"><code>git commit -m "Add new feature"</code></pre>
+                            </section>
+                        
+                            <section class="pt-8 pb-4">
+                                <h2 class="text-3xl text-gray-800 font-bold mb-4">Conclusion</h2>
+                                <p class="text-xl text-gray-700 leading-relaxed">Git is a powerful tool for version control and collaboration. It allows you to easily manage changes, collaborate with others, and maintain a record of project history. By learning the basics of Git, you can improve your productivity and become a more efficient developer.</p>
+                            </section>
+                        </main>
+                        <footer class="bg-white shadow py-4">
+                            <div class="container mx-auto px-6">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex">
+                                        <div class="social-icon">
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                        <div class="social-icon">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </body>
+                    </html>
+    
+                        
